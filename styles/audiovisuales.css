@@ -1,0 +1,34 @@
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.imagen {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin:20px
+}
+.imagen:hover {
+    scale: 1.1;
+}
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.subtitulo{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.robot{
+
+    color: white;
+    margin:10px 70px;
+}
