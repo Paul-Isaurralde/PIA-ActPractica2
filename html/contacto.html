@@ -17,7 +17,6 @@
 
     <!-- Este es el título y la navegación -->
     <header>
-        <h1>Z4X, el robot</h1>
         <nav>
             <ul>
                 <!-- El que tiene el clase active es donde estás parado y te ayuda a darle estilo especial -->
@@ -31,37 +30,48 @@
 
 
     <!-- Este es el formulario de contacto -->
-    <div>
-        <form>
-            <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribí aquí tu nombre" required minlength="3">
-            <label for="mail">Email: </label>
-            <input type="email" id="mail" name="mail" placeholder="Escribí aquí tu mail" required>
-            <label for="pais">País: </label>
-            <select name="pais" id="pais">
-                <option value="Argentina">Argentina</option>
-                <option value="Chile">Chile</option>
-                <option value="Bolivia">Bolivia</option>
-                <option value="Perú">Perú</option>
-                <option value="Uruguay">Uruguay</option>
-                <option value="España">España</option>
-                <option value="Colombia">Colombia</option>
-                <option value="Venezuela">Venezuela</option>
-                <option value="Paraguay">Paraguay</option>
-                <option value="Ecuaador">Ecuaador</option>
-            </select>
-            <label for="comentario">Comentario: </label>
-            <textarea name="comentario" id="comentario" placeholder="Escribí aquí tu comentario"></textarea>
-
-
-            <input type="submit" value="Enviar">
-
-        </form>
-    </div>
-
+    <main>
+        <div class="contenedor-contacto">
+            <form>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe  tu nombre" required minlength="3" maxlength="150">
+                <label for="mail">Email: </label>
+                <input type="email" id="mail" name="mail" placeholder="Escribe tu correo electrónico" required minlength="5" maxlength="250">
+                <label for="pais">País: </label>
+                <select class="text_select" name="pais" id="pais">
+                    <option value="" disabled selected>Seleccione su país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="España">España</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Ecuador">Ecuaador</option>
+                </select>
+                <label for="comentario">Comentario: </label>
+                <textarea name="comentario" class="text_select" id="comentario"
+                    placeholder="Escribe tu mensaje.." required minlength="10" maxlength="150"></textarea>
+                <label>¿Te gustaría seguir la historia de Z4X?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="historia" value="interesado"> Sí, solo su historia</label>
+                    <label><input type="checkbox" name="historia" value="no_interesado"> Sí, también la historia de sus
+                        amigos</label>
+                </div>
+                <label>¿Crees que Z4X debería ser considerado un héroe?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="heroe" value="si" required> Sí</label>
+                    <label><input type="radio" name="heroe" value="no"> No</label>
+                </div>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+    </main>
     <!-- Este es el footer (la parte del final de la página) -->
     <footer>
-        <p>Derechos reservados &copy; 2023</p>
+        <p>Derechos reservados &copy; 2024</p>
     </footer>
 
 

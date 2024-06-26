@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor-contacto{
+    background-color: rgba(255, 255, 255, 0.9);;
+    border-radius: 10px;
+    /* modifique el segundo parametro de 0 a auto para centrar al medio del viewport el contenedor del form */
+    margin: 50px auto;
+    padding: 20px;
+    width: 50%;
+    max-width: 600px;
+}
+
+input[type = "text"],
+input[type= "email"],
+.text_select{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid  #626262;
+    border-radius: 8px;
+}
+
+
+.checkbox-group,
+.radio-group {
+    margin: 10px 0;
+}
+
+.checkbox-group label,
+.radio-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkbox-group,
+.radio-group  {
+    margin-right: 10px;
+}
+
+button{
+    width: 100%;
+    background-color:rgb(70, 70, 219);
+    font-weight: 700;
+    color: #fff;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+input:focus,.text_select:focus{
+    background-color: rgb(211, 219, 219);
+}
+
+button:hover {
+    background-color: rgb(35, 35, 139);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
