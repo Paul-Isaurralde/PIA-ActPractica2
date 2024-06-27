@@ -1,9 +1,12 @@
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .contenedor{
     width: 80%;
-    margin: o auto;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    margin: 20px auto;
 }
 
 
