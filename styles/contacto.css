@@ -6,6 +6,11 @@ ul{
     flex-direction: row;
     justify-content: space-around;
 }
+.titulo-form{
+    text-align: center;
+    text-decoration:underline;
+    text-transform:uppercase;
+}
 .contenedor-contacto{
     background-color: rgba(255, 255, 255, 0.9);;
     border-radius: 10px;
